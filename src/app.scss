@@ -1,0 +1,37 @@
+html {
+    scroll-snap-type: y mandatory; //Providing the smooth effect on the axis
+    scroll-behavior: smooth;
+}
+* {
+    padding: 0; //By default some padding margin is present so remove them
+    margin: 0;
+    box-sizing: border-box; // Whatever height and width we are giving, it is including with border width
+    font-family: "DM Sans", sans-serif; //DM sans is font family of google fonts which is CDN
+}
+
+a {
+    text-decoration: none;
+    color: inherit;
+}
+body {
+    background-color: #0c0c1d;
+    color: lightgray;
+}
+section {
+    height: 100vh;
+    scroll-snap-align: center; //It will give push to the scrollbar automatically on scroll.
+}
+
+
+.course {
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    .box{
+        width: 200px;
+        height: 200px;
+        background-color: white;
+    }
+}
