@@ -58,7 +58,7 @@ export const Hero = () => {
             <motion.button variants={textVariant}>Contact me</motion.button>
           </motion.div>
           <motion.img
-            src="/scroll.png"
+            src="./scroll.png"
             alt=""
             variants={textVariant}
             animate="scrollButton"
@@ -74,7 +74,7 @@ export const Hero = () => {
         Writer Content Creator Influencer
       </motion.div>
       <div className="imageContainer">
-        <img src="/hero.png"></img>
+        <img src="./hero.png"></img>
       </div>
     </div>
   );
