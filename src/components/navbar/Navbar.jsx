@@ -1,5 +1,4 @@
-import React from "react";
-import './navbar.scss';
+import "./navbar.scss";
 import Sidebar from "../sidebar/Sidebar";
 import { GithubIcon, LinkedInIcon } from "./../icons/icon";
 

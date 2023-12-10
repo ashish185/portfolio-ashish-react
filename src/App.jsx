@@ -1,9 +1,7 @@
 import './app.scss'
 import { Parallax } from './components/parallax/Parallax';
-import Test from './components/Test';
 import { Hero } from './components/hero/Hero';
 import Navbar from './components/navbar/Navbar';
-import TestList from "./components/test/TestList";
 import { ABOUT, CONTACT, HOME_PAGE } from "./constant";
 const App = () => {
   return (
