@@ -2,7 +2,7 @@ import './app.scss'
 import { Parallax } from './components/parallax/Parallax';
 import { Hero } from './components/hero/Hero';
 import Navbar from './components/navbar/Navbar';
-import { ABOUT, CONTACT, HOME_PAGE } from "./constant";
+import { ABOUT, HOME_PAGE } from "./constant";
 const App = () => {
   return (
     <div>
