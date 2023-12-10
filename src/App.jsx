@@ -1,5 +1,5 @@
 import './app.scss'
-import { Parallax } from './components/Parallax/Parallex';
+import { Parallax } from './components/parallax/Parallax';
 import Test from './components/Test';
 import { Hero } from './components/hero/Hero';
 import Navbar from './components/navbar/Navbar';
