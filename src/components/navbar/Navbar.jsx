@@ -7,7 +7,6 @@ const Navbar = () => {
     <div className="navbar">
       <Sidebar />
       <div className="wrapper">
-        <span>Ashish Page</span>
         <div className="social">
           {/* Note: files in the public directory are served at the root path 
             therefore instead of /public/instagram.png use /instagram.png

@@ -13,7 +13,6 @@ const App = () => {
       <section id={ABOUT}>
         <Parallax />
       </section>
-      <section id={CONTACT}>{CONTACT}</section>
       <section>Section3</section>
       <section>Section4</section>
       <section>Section5</section>
