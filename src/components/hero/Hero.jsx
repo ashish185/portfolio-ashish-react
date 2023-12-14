@@ -59,7 +59,7 @@ export const Hero = () => {
           </motion.div>
           <motion.img
             src="./scroll.png"
-            alt=""
+            alt="cursor scroll"
             variants={textVariant}
             animate="scrollButton"
           />
