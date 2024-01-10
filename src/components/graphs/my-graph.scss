@@ -1,0 +1,18 @@
+.graph-container{
+  display: flex;
+  padding: 0 50px;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
+  max-width: 100%;
+  .tooltip{
+    font-size: large;
+  }
+}
+svg {
+  background: rebeccapurple;
+  overflow: visible;
+  width: 60%;
+  height: 50%;
+}
