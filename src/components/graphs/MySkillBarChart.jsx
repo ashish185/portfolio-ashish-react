@@ -1,11 +1,12 @@
 import React, { useState, useEffect, useRef } from "react";
 import { select, axisBottom, scaleLinear, axisRight, scaleBand } from "d3";
 import "./my-graph.scss";
+import AnimatedText from "../animated/AnimaedText";
 
 /**
  * This is a resize observer hook. When it first renders it return null.
  * @param {Object} ref: It accept reference object.
- * @returns 
+ * @returns
  */
 const useResizeObserver = (ref) => {
   const [dimensions, setDimensions] = useState(null);
@@ -32,7 +33,7 @@ const MySkillBarChart = ({ data }) => {
   const svgRef = useRef();
   const dimensions = useResizeObserver(svgRef);
   useEffect(() => {
-    if(!dimensions){
+    if (!dimensions) {
       return;
     }
     const { width, height } = dimensions;
@@ -44,12 +45,11 @@ const MySkillBarChart = ({ data }) => {
       .padding(0.5);
 
     const yScale = scaleLinear()
-      .domain([0, Math.max(...myData.map((obj) => obj.value))])
-      .range([height, 0]); //Because the height of svg is 150 px.
+      .domain([0, Math.max(...myData.map((obj) => obj.value)) + 0.3])
+      .range([height, 0]);
 
-    const xAxis = axisBottom(xScale)
-      .ticks(myData.length)
-      // .tickFormat((index) => index + 1);
+    const xAxis = axisBottom(xScale).ticks(myData.length);
+    // .tickFormat((index) => index + 1);
 
     const yAxis = axisRight(yScale).ticks(myData.length);
 
@@ -71,7 +71,7 @@ const MySkillBarChart = ({ data }) => {
       .join("rect")
       .attr("class", "bar")
       .style("transform", "scale(1,-1)")
-      .attr("x", (obj,) => {
+      .attr("x", (obj) => {
         return xScale(obj.label);
       })
       .attr("y", -height)
@@ -86,11 +86,11 @@ const MySkillBarChart = ({ data }) => {
           .text(value)
           .attr("x", xScale(label) + xScale.bandwidth() / 2)
           .attr("y", yScale(value))
-          .attr("text-anchor", "middle")
+          .attr("text-anchor", "middle");
       })
       .transition() //Using animation on the height.
       .attr("height", (obj) => height - yScale(obj.value))
-      .attr("fill", 'white')
+      .attr("fill", "white");
   }, [myData, dimensions]);
 
   /**
@@ -108,15 +108,15 @@ const MySkillBarChart = ({ data }) => {
     setMyData(() => newData);
   };
   return (
-    <>
-      <div className="graph-container">
-      <h1>Skill I am having!</h1>
-        <svg ref={svgRef}>
-          <g className="x-axis" />
-          <g className="y-axis" />
-        </svg>
+    <div className="graph-container">
+      <div style={{fontSize: 'large', marginBottom: '20px'}}>
+        <AnimatedText text="Skills I am having !" />
       </div>
-    </>
+      <svg ref={svgRef}>
+        <g className="x-axis" />
+        <g className="y-axis" />
+      </svg>
+    </div>
   );
 };
 

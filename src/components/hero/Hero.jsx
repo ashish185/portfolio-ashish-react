@@ -31,8 +31,8 @@ const sliderVariant = {
   animate: {
     x: "-220%", //setting the animate from left to right
     transition: {
-      repeat: Infinity,
-      duration: 20,
+      // repeat: Infinity,
+      duration: 5,
     },
   },
 };
