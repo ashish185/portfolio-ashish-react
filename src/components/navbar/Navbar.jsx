@@ -1,6 +1,6 @@
 import "./navbar.scss";
 import Sidebar from "../sidebar/Sidebar";
-import { GithubIcon, LinkedInIcon } from "./../icons/icon";
+import { GithubIcon, GmailIcon, LinkedInIcon } from "./../icons/icon";
 
 const Navbar = () => {
   return (
@@ -14,6 +14,9 @@ const Navbar = () => {
             */}
           <a href="https://www.linkedin.com/in/ashish185/">
             <LinkedInIcon />
+          </a>
+          <a href="mailto:singhalash185@gmail.com">
+            <GmailIcon />
           </a>
           <a href="https://github.com/ashish185">
             <GithubIcon />

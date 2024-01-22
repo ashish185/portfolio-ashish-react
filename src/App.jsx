@@ -18,8 +18,8 @@ const App = () => {
       <section id={SKILLS}>
         <Skills />
       </section>
-      <section>Section5</section>
-      <section>Section6</section>
+      {/* <section>Section5</section>
+      <section>Section6</section> */}
       {/* <Test /> */}
       {/*  <TestList /> */}
     </div>

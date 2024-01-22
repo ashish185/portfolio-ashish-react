@@ -1,16 +1,28 @@
-import './parallax.scss';
+import "./parallax.scss";
 import { motion } from "framer-motion";
 
 export const Parallax = () => {
   return (
-    <motion.div
-      className="parallax"
-      style={{
-        background: "linear-gradient(180deg, #0c0c1d, #111132)",
-      }}
-    >
-      <motion.h1>This is Parallax page</motion.h1>
-      <div className="mountains"></div>
+    <motion.div className="parallax">
+      <div>
+          Hi, I&apos;m CodeBucks, a web developer and UI/UX designer with a
+          passion for creating beautiful, functional, and user-centered digital
+          experiences. With 4 years of experience in the field. I am always
+          looking for new and innovative ways to bring my Clients visions to
+          life.
+        {/* <p className="font-medium">
+          I believe that design is about more than just making things look
+          pretty – it&apos;s about solving problems and creating intuitive,
+          enjoyable experiences for users.
+        </p>
+        <p className="font-medium">
+          Whether I&apos;m working on a website, mobile app, or other digital
+          product, I bring my commitment to design excellence and user-centered
+          thinking to every project I work on. I look forward to the opportunity
+          to bring my skills and passion to your next project.
+        </p> */}
+      </div>
+      {/* <div className="mountains"></div> */}
       <div className="planets"></div>
       <div className="stars"></div>
     </motion.div>

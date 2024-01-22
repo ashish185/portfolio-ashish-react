@@ -1,3 +1,5 @@
+@import "./mixins.scss";
+
 html {
     scroll-snap-type: y mandatory; //Providing the smooth effect on the axis
     scroll-behavior: smooth;
@@ -20,6 +22,11 @@ body {
 section {
     height: 100vh;
     scroll-snap-align: center; //It will give push to the scrollbar automatically on scroll.
+    @mixin mobile {
+        @media (max-width: 738px) {
+            scroll-snap-align: unset;
+        }
+    }
 }
 
 
