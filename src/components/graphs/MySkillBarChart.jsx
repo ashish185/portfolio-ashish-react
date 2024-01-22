@@ -1,7 +1,8 @@
-import React, { useState, useEffect, useRef } from "react";
+import { useState, useEffect, useRef } from "react";
 import { select, axisBottom, scaleLinear, axisRight, scaleBand } from "d3";
 import "./my-graph.scss";
-import AnimatedText from "../animated/AnimaedText";
+import AnimatedText from "../animated/AnimatedText";
+import Select from "./../select/Select";
 
 /**
  * This is a resize observer hook. When it first renders it return null.
@@ -28,10 +29,13 @@ const useResizeObserver = (ref) => {
  * Here purpose id add interactivity on the graph like Tooltip on the bar:
  * @returns JSX
  */
-const MySkillBarChart = ({ data }) => {
+const MySkillBarChart = ({ data, options, onSelectChange }) => {
   const [myData, setMyData] = useState(data);
   const svgRef = useRef();
   const dimensions = useResizeObserver(svgRef);
+  useEffect(() => {
+    setMyData(data);
+  }, [data]);
   useEffect(() => {
     if (!dimensions) {
       return;
@@ -60,11 +64,6 @@ const MySkillBarChart = ({ data }) => {
       .style("transform", `translateY(${height}px)`)
       .call(xAxis);
 
-    // const colorScale = scaleLinear()
-    //   .domain([25, 100, 150])
-    //   .range(["rebeccapurple"])
-    //   .clamp(true); // if do not clamp then less<=25 will be green
-
     svg
       .selectAll(".bar")
       .data(myData)
@@ -90,27 +89,14 @@ const MySkillBarChart = ({ data }) => {
       })
       .transition() //Using animation on the height.
       .attr("height", (obj) => height - yScale(obj.value))
-      .attr("fill", "white");
+      .attr("fill", "cornflowerblue");
   }, [myData, dimensions]);
 
-  /**
-   * When ever the button is clicked, It will add five to every element of myData.
-   * Thus change data cause useEffect hook to call which will invoke update callback of join method.
-   * Which will replace the class name of the circle to "updated".
-   */
-  const changeDataClick = () => {
-    const newData = myData.map((val) => val + 5);
-    setMyData(() => newData);
-  };
-
-  const removeElements = () => {
-    const newData = myData.filter((val) => val > 45);
-    setMyData(() => newData);
-  };
   return (
     <div className="graph-container">
-      <div style={{fontSize: 'large', marginBottom: '20px'}}>
+      <div className="animated-text_dropdown">
         <AnimatedText text="Skills I am having !" />
+        <Select onChange={onSelectChange} options={options} />
       </div>
       <svg ref={svgRef}>
         <g className="x-axis" />

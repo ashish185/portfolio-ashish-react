@@ -3,7 +3,7 @@ import { Parallax } from './components/parallax/Parallax';
 import { Hero } from './components/hero/Hero';
 import Navbar from './components/navbar/Navbar';
 import { ABOUT, HOME_PAGE, SKILLS } from "./constant";
-import MySkillBarChartMain from './components/graphs/MySkillBarChartMain';
+import Skills from './components/page/Skills/Skills';
 
 const App = () => {
   return (
@@ -15,8 +15,8 @@ const App = () => {
       <section id={ABOUT}>
         <Parallax />
       </section>
-      <section id={SKILLS} >
-        <MySkillBarChartMain />
+      <section id={SKILLS}>
+        <Skills />
       </section>
       <section>Section5</section>
       <section>Section6</section>
