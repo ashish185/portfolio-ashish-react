@@ -1,3 +1,5 @@
+import RobotParent from "./RobotParent";
+import Robot from "./RobotParent";
 import "./hero.scss";
 import { motion } from "framer-motion";
 
@@ -74,6 +76,7 @@ export const Hero = () => {
         Writer Content Creator Influencer
       </motion.div>
       <div className="imageContainer">
+        {/* <RobotParent /> */}
         <img src="./hero.png"></img>
       </div>
     </div>
