@@ -1,1 +1,0 @@
-.graph-container{display:flex;padding:0 50px;flex-direction:column;align-items:center;justify-content:center;height:100vh;width:100%}.graph-container .animated-text_dropdown{font-size:large;margin-bottom:20px;display:flex;align-items:center;flex-wrap:wrap}@media (max-width: 738px){.graph-container{height:30vh}}.graph-container svg{overflow:visible;width:100%;height:60%}
