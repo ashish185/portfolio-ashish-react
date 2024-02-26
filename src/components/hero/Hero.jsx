@@ -77,7 +77,7 @@ export const Hero = () => {
       </motion.div>
       <div className="imageContainer">
         {/* <RobotParent /> */}
-        <img src="./hero.png"></img>
+        <img src="./hero.png" alt="Profile Picture" />
       </div>
     </div>
   );

@@ -1,12 +1,11 @@
-import React from "react";
 
-const Select = ({ options = [], onChange }) => {
-  console.log(options);
+const Select = ({ options = [], onChange,  ariaLabelledby }) => {
   return (
     <div>
       <select
         onChange={onChange}
         defaultValue={options.find((el) => el.selected)?.value}
+        aria-labelledby={ariaLabelledby}
       >
         {options.map(({ label, value, selected }) => {
           return (

@@ -94,9 +94,13 @@ const MySkillBarChart = ({ data, options, onSelectChange }) => {
 
   return (
     <div className="graph-container">
-      <div className="animated-text_dropdown">
+      <div className="animated-text_dropdown" id="Skills dropdown">
         <AnimatedText text="Skills I am having !" />
-        <Select onChange={onSelectChange} options={options} />
+        <Select
+          onChange={onSelectChange}
+          options={options}
+          ariaLabelledby="Skills dropdown"
+        />
       </div>
       <svg ref={svgRef}>
         <g className="x-axis" />
