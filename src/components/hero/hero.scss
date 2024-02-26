@@ -5,9 +5,11 @@
     background: linear-gradient(180deg, #0c0c1d, #111132);
     overflow: hidden;
     position: relative;
+    display: flex;
+    flex-direction: row;
 
     .wrapper {
-        max-width: 1366px;
+        // max-width: 1366px;
         height: 100%;
         margin: auto;
 
@@ -20,7 +22,7 @@
             gap: 40px;
 
             @include mobile {
-                height: 50%;
+                height: 36%;
                 width: 100%;
                 align-items: center; //Make the text center to mobile.
                 gap: 20px;
@@ -76,6 +78,7 @@
         position: absolute;
         top: 0;
         right: 0;
+        width: 50%;
 
         img {
             width: 100%;

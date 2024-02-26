@@ -5,6 +5,7 @@ import { ABOUT, HOME_PAGE, SKILLS } from "./constant";
 import Skills from './components/page/Skills/Skills';
 import AnimatedButton from './components/animated/AnimatedButton';
 import { AboutMe } from './components/page/AboutMe/AboutMe';
+import { ContactMe } from './components/page/ContactMe/ContactMe';
 
 const App = () => {
   return (
@@ -22,6 +23,9 @@ const App = () => {
       {/* {/* <section>Section5</section> */}
       <section>
         <AnimatedButton />
+      </section>
+      <section>
+        <ContactMe />
       </section>
       {/* <Test /> */}
       {/*  <TestList /> */}
