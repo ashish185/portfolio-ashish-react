@@ -22,7 +22,7 @@
             gap: 40px;
 
             @include mobile {
-                height: 36%;
+                height: 60%;
                 width: 100%;
                 align-items: center; //Make the text center to mobile.
                 gap: 20px;
@@ -36,10 +36,18 @@
             }
 
             h1 {
-                font-size: 88px;
+                font-size: 90px;
 
                 @include mobile {
                     font-size: 36px; //Small the font
+                }
+
+                @include tablet {
+                    font-size: 40px; //Small the font
+                }
+
+                @include laptop{
+                    font-size: 80px;
                 }
             }
 
@@ -87,7 +95,7 @@
         }
 
         @include mobile {
-            height: 50%;
+            height: 40%;
             width: 100%;
             top: unset;
             bottom: 0;

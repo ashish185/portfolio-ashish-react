@@ -67,14 +67,7 @@ export const Hero = () => {
           />
         </motion.div>
       </div>
-      <motion.div
-        className="slidingTextContainer"
-        variants={sliderVariant}
-        initial="initial"
-        animate="animate"
-      >
-        Writer Content Creator Influencer
-      </motion.div>
+   
       <div className="imageContainer">
         {/* <RobotParent /> */}
         <img src="./hero-webp-format.webp" alt="Profile Picture" />

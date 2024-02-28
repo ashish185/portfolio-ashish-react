@@ -4,8 +4,6 @@ const Robot = (props) => (
   <svg
     xmlns="http://www.w3.org/2000/svg"
     xmlnsXlink="http://www.w3.org/1999/xlink"
-    width={500}
-    height={500}
     preserveAspectRatio="xMidYMid slice"
     style={{
       width: "100%",

@@ -16,7 +16,7 @@
         font-size: 30px;
         min-width: 360px;
         z-index: 3;
-        width: 100%;
+        width: 90%;
 
         .description {
             width: 65%;
@@ -28,9 +28,9 @@
             width: 35%;
             height: 35%;
         }
-        @include tablet {
+        @include mobile {
             flex-direction: column;
-            font-size: 25px;
+            font-size: 20px;
         }
     }
 

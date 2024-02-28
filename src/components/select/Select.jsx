@@ -1,3 +1,4 @@
+import './select.scss';
 
 const Select = ({ options = [], onChange,  ariaLabelledby }) => {
   return (

@@ -1,17 +1,17 @@
-import './app.scss'
+import './app.scss';
 import { Hero } from './components/hero/Hero';
 import Navbar from './components/navbar/Navbar';
-import { ABOUT, HOME_PAGE, SKILLS } from "./constant";
-import Skills from './components/page/Skills/Skills';
-import AnimatedButton from './components/animated/AnimatedButton';
 import { AboutMe } from './components/page/AboutMe/AboutMe';
-import { ContactMe } from './components/page/ContactMe/ContactMe';
+import Skills from './components/page/Skills/Skills';
+import TimeLine from './components/timeline/TimeLine';
+import { ABOUT, HOME_PAGE, SKILLS, TIME_LINE } from "./constant";
+import { getExperiences } from './../config';
 
 const App = () => {
   return (
     <div>
       <section id={HOME_PAGE}>
-        <Navbar />
+        <Navbar linksList={[HOME_PAGE, ABOUT, SKILLS, TIME_LINE]} />
         <Hero />
       </section>
       <section id={ABOUT}>
@@ -20,15 +20,9 @@ const App = () => {
       <section id={SKILLS}>
         <Skills />
       </section>
-      {/* {/* <section>Section5</section> */}
-      <section>
-        <AnimatedButton />
+      <section id={TIME_LINE}>
+        <TimeLine experiencesList={getExperiences()} />
       </section>
-      <section>
-        <ContactMe />
-      </section>
-      {/* <Test /> */}
-      {/*  <TestList /> */}
     </div>
   );
 };

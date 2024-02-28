@@ -2,10 +2,10 @@ import "./navbar.scss";
 import Sidebar from "../sidebar/Sidebar";
 import { GithubIcon, GmailIcon, LinkedInIcon } from "./../icons/icon";
 
-const Navbar = () => {
+const Navbar = ({linksList}) => {
   return (
     <div className="navbar">
-      <Sidebar />
+      <Sidebar linksList={linksList} />
       <div className="wrapper">
         <span></span>
         <div className="social">
