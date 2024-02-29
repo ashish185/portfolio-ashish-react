@@ -8,6 +8,8 @@ const TimeLine = ({ experiencesList = [] }) => {
           year,
           designation,
           workDescription,
+          company,
+          skillsUsed
         } = obj;
         return (
           <div
@@ -15,17 +17,23 @@ const TimeLine = ({ experiencesList = [] }) => {
             className={`container ${index % 2 === 0 ? "left" : "right"}`}
           >
             <div className="content">
-              <h2>
-                {year}
-                {/* {`(${year}` +
-                  `${currentlyWorking ? "- Present" : ""}`.trim() +
-                  ")"} */}
-                &nbsp;
-              </h2>
               <h3>
+                {year}&nbsp;
                 <u>{designation}</u>
               </h3>
+              <h4 style={{ display: "flex" }}>
+                <b>
+                  <label htmlFor="Company">Company:&nbsp;</label>
+                </b>
+                <p aria-labelledby="Company">{company}</p>
+              </h4>
               <p>{workDescription}</p>
+              <h4 style={{ display: "flex" }}>
+                <b>
+                  <label htmlFor="Skills">Skills:&nbsp;</label>
+                </b>
+                <p aria-labelledby="Skills">{skillsUsed.join(", ")}</p>
+              </h4>
             </div>
           </div>
         );

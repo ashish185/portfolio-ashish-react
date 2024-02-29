@@ -1,7 +1,6 @@
-import RobotParent from "./RobotParent";
-import Robot from "./RobotParent";
-import "./hero.scss";
 import { motion } from "framer-motion";
+import "./hero.scss";
+import { CONTACT } from "../../constant";
 
 const textVariant = {
   initial: {
@@ -26,25 +25,15 @@ const textVariant = {
   },
 };
 
-const sliderVariant = {
-  initial: {
-    x: 0,
-  },
-  animate: {
-    x: "-220%", //setting the animate from left to right
-    transition: {
-      // repeat: Infinity,
-      duration: 5,
-    },
-  },
-};
-
 export const Hero = () => {
+  const onContactMeClick=()=>{
+    
+  };
   return (
     <div className="hero">
       <div className="wrapper">
         <motion.div
-          className="textContainer"
+          className="text-container"
           variants={textVariant}
           initial="initial"
           animate="animate"
@@ -57,7 +46,11 @@ export const Hero = () => {
             <motion.button variants={textVariant}>
               See the latest works
             </motion.button>
-            <motion.button variants={textVariant}>Contact me</motion.button>
+            <a href={`#${CONTACT}`}>
+              <motion.button variants={textVariant} onClick={onContactMeClick}>
+                Contact me
+              </motion.button>
+            </a>
           </motion.div>
           <motion.img
             src="./scroll.png"
@@ -67,7 +60,7 @@ export const Hero = () => {
           />
         </motion.div>
       </div>
-   
+
       <div className="imageContainer">
         {/* <RobotParent /> */}
         <img src="./hero-webp-format.webp" alt="Profile Picture" />

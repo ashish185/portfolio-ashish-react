@@ -4,7 +4,7 @@
     padding: 0; //By default some padding margin is present so remove them
     margin: 0;
     box-sizing: border-box; // Whatever height and width we are giving, it is including with border width
-    font-family: "DM Sans", sans-serif; //DM sans is font family of google fonts which is CDN
+    font-family: sans-serif; //DM sans is font family of google fonts which is CDN
 }
 
 a {
@@ -12,7 +12,7 @@ a {
     color: inherit;
 }
 body {
-    background: linear-gradient(180deg, #0c0c1d, #111132);
+    background: linear-gradient(360deg, #0c0c1d, #111132);
     color: lightgray;
 }
 section {

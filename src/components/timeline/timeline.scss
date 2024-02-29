@@ -2,6 +2,7 @@
     position: relative;
     max-width: 1200px;
     margin: 0 auto;
+    height: 90%;
 }
 
 /* The actual timeline (the vertical ruler) */
@@ -18,7 +19,7 @@
 
 /* Container around content */
 .container {
-    padding: 20px 40px;
+    padding: 20px 20px;
     position: relative;
     background-color: inherit;
     width: 50%;
