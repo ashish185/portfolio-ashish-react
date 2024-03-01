@@ -1,3 +1,4 @@
+@import "../../mixins.scss";
 .timeline {
     position: relative;
     max-width: 1200px;
@@ -19,7 +20,7 @@
 
 /* Container around content */
 .container {
-    padding: 20px 20px;
+    padding: 20px 40px;
     position: relative;
     background-color: inherit;
     width: 50%;
@@ -84,10 +85,17 @@
 
 /* The actual content */
 .content {
-    padding: 20px 50px;
+    padding: 20px 20px;
     position: relative;
     background: linear-gradient(180deg, #0c0c1d, #111132);
     border-radius: 6px;
+    @include mobile {
+        font-size: x-small;
+    }
+    @include tablet {
+        font-size: small;
+    }
+    
 }
 
 .content:hover {
@@ -106,7 +114,6 @@
     .container {
         width: 100%;
         padding-left: 70px;
-        padding-right: 25px;
     }
 
     /* Make sure that all arrows are pointing leftwards */

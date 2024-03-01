@@ -22,10 +22,10 @@ const TimeLine = ({ experiencesList = [] }) => {
                 <u>{designation}</u>
               </h3>
               <h4 style={{ display: "flex" }}>
-                <b>
+                <strong>
                   <label htmlFor="Company">Company:&nbsp;</label>
-                </b>
-                <p aria-labelledby="Company">{company}</p>
+                </strong>
+                <p>{company}</p>
               </h4>
               <p>{workDescription}</p>
               <h4 style={{ display: "flex" }}>
