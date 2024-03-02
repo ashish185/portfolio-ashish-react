@@ -26,41 +26,36 @@ const textVariant = {
 };
 
 export const Hero = () => {
-  const onContactMeClick=()=>{
-    
-  };
+  const onContactMeClick = () => {};
   return (
     <div className="hero">
-      <div className="wrapper">
-        <motion.div
-          className="text-container"
-          variants={textVariant}
-          initial="initial"
-          animate="animate"
-        >
-          <motion.h2 variants={textVariant}>Ashish Singhal</motion.h2>
-          <motion.h1 variants={textVariant}>
-            Web developer and UI designer
-          </motion.h1>
-          <motion.div variants={textVariant} className="buttons">
-            <motion.button variants={textVariant}>
-              See the latest works
+      <motion.div
+        className="text-container"
+        variants={textVariant}
+        initial="initial"
+        animate="animate"
+      >
+        <motion.h2 variants={textVariant} className="name_heading">
+          Ashish Singhal
+        </motion.h2>
+        <motion.h1 variants={textVariant} className="description_heading">
+          Web developer and UI designer
+        </motion.h1>
+        <motion.div variants={textVariant} className="buttons">
+          <a href={`#${CONTACT}`}>
+            <motion.button variants={textVariant} onClick={onContactMeClick}>
+              Contact me
             </motion.button>
-            <a href={`#${CONTACT}`}>
-              <motion.button variants={textVariant} onClick={onContactMeClick}>
-                Contact me
-              </motion.button>
-            </a>
-          </motion.div>
-          <motion.img
-            src="./scroll.png"
-            alt="cursor scroll"
-            variants={textVariant}
-            animate="scrollButton"
-          />
+          </a>
         </motion.div>
-      </div>
-
+        <motion.img
+          src="./scroll.png"
+          alt="cursor scroll"
+          variants={textVariant}
+          animate="scrollButton"
+        />
+      </motion.div>
+      a
       <div className="imageContainer">
         {/* <RobotParent /> */}
         <img src="./hero-webp-format.webp" alt="Profile Picture" />

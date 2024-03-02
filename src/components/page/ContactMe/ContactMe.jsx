@@ -5,12 +5,12 @@ import RobotParent from "./../../hero/RobotParent";
 export const ContactMe = () => {
   return (
     <div className="contact-me">
-      <h1>Have a Coffee with me!</h1>
+      <h1 className="coffee-message">Have a Coffee with me!</h1>
       <div className="robot">
         <RobotParent />
       </div>
       <div className="connection-signature">
-        <h3>Contact me at</h3>
+        <h3 className="contact_me-message">Contact me at below mediums</h3>
         <div className="connection">
           <Connection />
         </div>

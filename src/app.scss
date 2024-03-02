@@ -7,6 +7,32 @@
     font-family: sans-serif; //DM sans is font family of google fonts which is CDN
 }
 
+html {
+    margin: 0 5%;
+}
+
+@include mobile {
+    html {
+        font-size: 4px;
+    }
+}
+
+@include tablet {
+    html {
+        font-size: 5px;
+    }
+}
+
+@include laptop {
+    html {
+        font-size: 6px;
+    }
+}
+@include desktop {
+    html {
+        font-size: 62.5%;
+    }
+}
 a {
     text-decoration: none;
     color: inherit;
