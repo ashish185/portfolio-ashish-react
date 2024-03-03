@@ -41,10 +41,11 @@ body {
     background: linear-gradient(360deg, #0c0c1d, #111132);
     color: lightgray;
 }
-section {
-    height: 100vh;
-}
 
+section:not(:last-child) {
+    /* Your styling for all sections except the last one */
+    margin-bottom: 14rem;
+}
 
 .course {
     height: 100vh;

@@ -4,6 +4,7 @@ const RobotParent = (props) => (
   <div
     aria-label="animation"
     tabIndex={0}
+    className=""
   >
     <Robot />
   </div>

@@ -33,24 +33,27 @@ const AnimatedText = ({ text, className = '' }) => {
       <motion.h1
         variants={quote}
         initial="initial"
-        animate="animate" 
+        animate="animate"
+        className={className}
       >
         {/* {text.split("").map((word, index))}
          */}
         {text.split(" ").map((word, index) => {
           return (
-            <motion.span key={word + '_' + index} className='inline-block text-left'
+            <motion.span
+              key={word + "_" + index}
+              className="inline-block text-left"
               variants={singleWord}
               // initial="initial" //This has to be given if we are not giving staggerChildren
-              // animate="animate" 
+              // animate="animate"
             >
               {word}&nbsp;
             </motion.span>
-           )
-         })}
+          );
+        })}
       </motion.h1>
     </div>
-  )
+  );
 }
 
 export default AnimatedText;

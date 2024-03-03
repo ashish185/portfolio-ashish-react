@@ -2,6 +2,20 @@
 
 .hero {
     height: calc(100vh - 100px); //Since section height is 100vh and nav bar is 100px
+
+    @include tablet{
+        height: calc(100vh - 80rem);
+    }
+
+    @include landscape-tablet{
+        height: calc(100vh - 130rem);
+    } 
+
+    @include laptop{
+        height: calc(100vh - 100px);
+    }
+
+   
     overflow: hidden;
     position: relative;
     display: flex;
@@ -13,9 +27,10 @@
         flex-direction: column;
         align-items: center;
         justify-content: center;
-        gap: 8rem;
+        gap: 10rem;
 
         @include mobile {
+            gap: 5rem;
             height: 60%;
             width: 100%;
             align-items: center; //Make the text center to mobile.

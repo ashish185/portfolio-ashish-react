@@ -55,7 +55,6 @@ export const Hero = () => {
           animate="scrollButton"
         />
       </motion.div>
-      a
       <div className="imageContainer">
         {/* <RobotParent /> */}
         <img src="./hero-webp-format.webp" alt="Profile Picture" />

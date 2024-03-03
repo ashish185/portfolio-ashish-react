@@ -5,7 +5,7 @@ import { GithubIcon, GmailIcon, LinkedInIcon } from "./../icons/icon";
 const Navbar = ({linksList}) => {
   return (
     <div className="navbar">
-      <Sidebar linksList={linksList} />
+      {/* <Sidebar linksList={linksList} /> */}
       <div className="wrapper">
         <span></span>
         <div className="social">

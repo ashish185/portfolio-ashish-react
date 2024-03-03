@@ -5,6 +5,10 @@
     display: flex;
     flex-direction: column;
     align-items: center;
+    .robo{
+        height: 30rem;
+        width: 30rem;
+    }
 
     .coffee-message{
         font-size: 5rem;
