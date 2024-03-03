@@ -48,12 +48,12 @@ export const Hero = () => {
             </motion.button>
           </a>
         </motion.div>
-        <motion.img
+        {/* <motion.img
           src="./scroll.png"
           alt="cursor scroll"
           variants={textVariant}
           animate="scrollButton"
-        />
+        /> */}
       </motion.div>
       <div className="imageContainer">
         {/* <RobotParent /> */}

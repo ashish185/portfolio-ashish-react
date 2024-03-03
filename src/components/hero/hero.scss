@@ -1,19 +1,24 @@
 @import "../../mixins.scss";
 
 .hero {
-    height: calc(100vh - 100px); //Since section height is 100vh and nav bar is 100px
+    height: calc(100vh - 100px); //Since section height is 100vh and nav bar is 
+    
 
-    @include tablet{
-        height: calc(100vh - 80rem);
-    }
+    // @include tablet{
+    //     height: calc(100vh - 100px);
+    // }
 
-    @include landscape-tablet{
-        height: calc(100vh - 130rem);
-    } 
+    // @include landscape-tablet{
+    //     height: calc(100vh - 100px);
+    // } 
 
-    @include laptop{
-        height: calc(100vh - 100px);
-    }
+    // @include laptop{
+    //     height: calc(100vh - 100px);
+    // }
+
+    // @include desktop{
+    //     height: calc(100vh - 100px);
+    // }
 
    
     overflow: hidden;
@@ -26,8 +31,7 @@
         display: flex;
         flex-direction: column;
         align-items: center;
-        justify-content: center;
-        gap: 10rem;
+        justify-content: space-evenly;
 
         @include mobile {
             gap: 5rem;
@@ -44,7 +48,7 @@
         }
 
         .description_heading {
-            font-size: 5rem;
+            font-size: 4rem;
         }
 
         .buttons {
