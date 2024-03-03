@@ -39,8 +39,8 @@ export const LinkedInIcon = ({ className, ...rest }) => (
 export const GmailIcon = ({ className, ...rest }) => (
   <svg
   xmlns="http://www.w3.org/2000/svg"
-  width={40}
-  height={30}
+  width="1em"
+  height="1em"
   fill="none"
   viewBox="0 0 32 32"
   {...rest}

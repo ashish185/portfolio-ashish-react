@@ -41,6 +41,11 @@
             text-align: center;
         }
 
+        @include tablet{
+            justify-content: center;
+            gap: 10rem;
+        }
+
         .name_heading {
             font-size: 4rem;
             color: rebeccapurple;
@@ -53,7 +58,10 @@
 
         .buttons {
             button {
-                padding: 20px;
+                font-size: 3rem;
+                // width: 1000px;
+                // height: 1000px;
+                padding: 2rem;
                 border: 1px solid white;
                 border-radius: 10px;
                 background-color: transparent;
