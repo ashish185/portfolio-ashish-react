@@ -1,14 +1,14 @@
 @import "../../mixins.scss";
 
 .hero {
-    height: calc(100vh - 100px); //Since section height is 100vh and nav bar is 
-    
+    height: calc(100vh - 10rem); //Since section height is 100vh and nav bar is 
+
 
     // @include tablet{
     //     height: calc(100vh - 100px);
     // }
 
-    // @include landscape-tablet{
+    // @include tablet{
     //     height: calc(100vh - 100px);
     // } 
 
@@ -20,31 +20,26 @@
     //     height: calc(100vh - 100px);
     // }
 
-   
+
     overflow: hidden;
-    position: relative;
+    // position: relative;
     display: flex;
+    flex-basis: 50%;
+    flex-direction: row;
+
+    @include mobile {
+        flex-direction: column;
+        align-items: center;
+        justify-content: flex-end;
+    }
 
     .text-container {
         height: 100%;
-        width: 55%;
         display: flex;
         flex-direction: column;
         align-items: center;
         justify-content: space-evenly;
-
-        @include mobile {
-            gap: 5rem;
-            height: 60%;
-            width: 100%;
-            align-items: center; //Make the text center to mobile.
-            text-align: center;
-        }
-
-        @include tablet{
-            justify-content: center;
-            gap: 10rem;
-        }
+        flex-grow: 2;
 
         .name_heading {
             font-size: 4rem;
@@ -59,8 +54,6 @@
         .buttons {
             button {
                 font-size: 3rem;
-                // width: 1000px;
-                // height: 1000px;
                 padding: 2rem;
                 border: 1px solid white;
                 border-radius: 10px;
@@ -80,21 +73,10 @@
         }
     }
 
-    .slidingTextContainer {
-        position: absolute;
-        font-size: 50vh;
-        bottom: -120px;
-        white-space: nowrap;
-        color: #ffffff09;
-        width: 50%;
-        font-weight: bold;
-    }
 
     .imageContainer {
-        height: 100%;
-        position: absolute;
-        top: 0;
-        right: 0;
+        display: flex;
+        flex-grow: 1;
         width: 50%;
 
         img {
@@ -104,10 +86,9 @@
         }
 
         @include mobile {
-            height: 40%;
-            width: 100%;
-            top: unset;
-            bottom: 0;
+            height: 35%;
+            justify-content: end;
         }
+     
     }
 }

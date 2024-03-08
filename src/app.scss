@@ -30,13 +30,13 @@ html {
 }
 @include desktop {
     html {
-        font-size: 62.5%;
+        font-size: 60%;
     }
 }
 
 @include large-desktop{
     html {
-        font-size: 100%;
+        font-size: 70%;
     }
 }
 

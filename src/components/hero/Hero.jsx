@@ -42,18 +42,17 @@ export const Hero = () => {
           Web developer and UI designer
         </motion.h1>
         <motion.div variants={textVariant} className="buttons">
-          <a href={`#${CONTACT}`}>
+          <a href={`#${CONTACT}`} title="Go to Contact section">
             <motion.button variants={textVariant} onClick={onContactMeClick}>
               Contact me
             </motion.button>
           </a>
+          <a href="https://drive.google.com/file/d/1cMQQVUTMpOThoKG9F2VIBMf8Cdx7PGCD/view?usp=sharing" download>
+            <motion.button variants={textVariant} onClick={onContactMeClick} title="Download Resume">
+              Resume
+            </motion.button>
+          </a>
         </motion.div>
-        {/* <motion.img
-          src="./scroll.png"
-          alt="cursor scroll"
-          variants={textVariant}
-          animate="scrollButton"
-        /> */}
       </motion.div>
       <div className="imageContainer">
         {/* <RobotParent /> */}
