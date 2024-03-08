@@ -36,3 +36,10 @@
         @content;
     }
 }
+
+// @mixin landscape {
+//     @media only screen and (orientation: landscape) {
+//         /* CSS rules for landscape mode */
+//         @content;
+//       }
+// }
