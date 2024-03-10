@@ -1,8 +1,8 @@
 @import "../../mixins.scss";
 
 .time-line-container {
-    height: 100vh;
-
+    margin-top: 15px;
+    block-size: fit-content;
     h1 {
         align-items: center;
         text-align: center;

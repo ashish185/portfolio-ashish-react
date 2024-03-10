@@ -4,7 +4,7 @@ import { GithubIcon, GmailIcon, LinkedInIcon } from "./../icons/icon";
 
 const Navbar = ({linksList}) => {
   return (
-    <div className="navbar">
+    <nav className="navbar">
       {/* <Sidebar linksList={linksList} /> */}
       <div className="wrapper">
         <span></span>
@@ -32,7 +32,7 @@ const Navbar = ({linksList}) => {
           </a>
         </div>
       </div>
-    </div>
+    </nav>
   );
 };
 

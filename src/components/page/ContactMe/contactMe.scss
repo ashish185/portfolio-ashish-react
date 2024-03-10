@@ -2,8 +2,8 @@
 
 .contact-me {
     height: 100vh;
-    width: fit-content;
     block-size: fit-content;
+    margin-top: 10rem;
 
     .internal-content{
         display: flex;
@@ -12,8 +12,8 @@
         align-items: center;
         height: 90%;
         .robo{
-            height: 30rem;
-            width: 30rem;
+            height: 25rem;
+            width: 25rem;
         }
     
         .coffee-message{
@@ -28,6 +28,10 @@
             flex-direction: column;
             align-items: center;
             justify-content: center;
+
+            h3 {
+                margin-right: 10px;
+            }
         }
         .signature{
             font-family: "Sacramento";

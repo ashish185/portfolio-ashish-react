@@ -1,9 +1,9 @@
 @import "../../../mixins.scss";
 
 .about-me {
+    margin-top: 20px;
     height: 100vh;
     width: fit-content;
-    block-size: fit-content;
     // overflow: hidden;
     display: flex;
     gap: 5rem;
@@ -20,7 +20,7 @@
         gap: 10px;
         z-index: 3;
 
-        @include laptop{
+        @include laptop {
             font-size: 3rem;
         }
 
@@ -28,26 +28,25 @@
             width: 35%;
             height: 35%;
         }
-        
+
     }
 
-    .companies-experiences{
+    .companies-experiences {
         display: flex;
         align-items: center;
         flex-direction: column;
         justify-content: space-evenly;
         font-size: 2rem;
-        
-        .companies{
+
+        .companies {
             display: flex;
             justify-content: center;
             align-items: center;
             gap: 10rem;
-            aspect-ratio: 2;
-           
+
             img {
-                width: 30%;
-                height: 30%;
+                max-width: 20rem;
+                max-height: 15rem;
             }
         }
     }

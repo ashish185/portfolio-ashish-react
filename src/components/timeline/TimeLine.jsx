@@ -3,7 +3,7 @@ import "./timeline.scss";
 const TimeLine = ({ experiencesList = [] }) => {
   return (
     <div className="time-line-container">
-         <h1>Resume</h1>
+         <h1>Experience</h1>
       <div className="timeline">
         {experiencesList.map((obj, index) => {
           const { year, designation, workDescription, company, skillsUsed } =
