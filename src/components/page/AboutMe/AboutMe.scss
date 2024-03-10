@@ -3,6 +3,7 @@
 .about-me {
     height: 100vh;
     width: fit-content;
+    block-size: fit-content;
     overflow: hidden;
     display: flex;
     gap: 5rem;
@@ -11,32 +12,24 @@
 
     .description {
         height: 100%;
+        font-size: 4rem;
         display: flex;
+        text-align: center;
         flex-direction: column;
         justify-content: space-evenly;
         align-items: center;
         gap: 10px;
         z-index: 3;
 
-        .description {
-            text-align: center;
+        @include laptop{
+            font-size: 3rem;
         }
 
         .robot {
             width: 35%;
             height: 35%;
         }
-        @include mobile {
-            flex-direction: column;
-            // font-size: large;
-        }
-
-        @include tablet {
-            font-size: x-large;
-        }
-        @include laptop{
-            font-size: xx-large;
-        }
+        
     }
 
     .companies-experiences{
