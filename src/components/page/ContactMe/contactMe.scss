@@ -2,6 +2,8 @@
 
 .contact-me {
     height: 100vh;
+    width: fit-content;
+    block-size: fit-content;
 
     .internal-content{
         display: flex;
@@ -10,8 +12,8 @@
         align-items: center;
         height: 90%;
         .robo{
-            height: 50rem;
-            width: 50rem;
+            height: 30rem;
+            width: 30rem;
         }
     
         .coffee-message{

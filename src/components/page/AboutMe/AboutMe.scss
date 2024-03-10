@@ -4,14 +4,13 @@
     height: 100vh;
     width: fit-content;
     block-size: fit-content;
-    overflow: hidden;
+    // overflow: hidden;
     display: flex;
     gap: 5rem;
     flex-direction: column;
     justify-content: space-evenly;
 
     .description {
-        height: 100%;
         font-size: 4rem;
         display: flex;
         text-align: center;
@@ -33,7 +32,6 @@
     }
 
     .companies-experiences{
-        height: 100%;
         display: flex;
         align-items: center;
         flex-direction: column;
