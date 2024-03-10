@@ -32,7 +32,7 @@
 }
 
 @mixin large-desktop {
-    @media only screen and (min-width: 2560px) {
+    @media only screen and (min-width: 1400px) {
         @content;
     }
 }

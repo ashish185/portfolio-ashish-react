@@ -1,0 +1,39 @@
+@import "../../../mixins.scss";
+
+.graph-container {
+    display: flex;
+    padding: 0 50px;
+    flex-direction: column;
+    align-items: center;
+    height: 100vh;
+    width: 100%;
+    gap: 5rem;
+
+    .bar-graph-heading {
+        font-size: 4rem;
+    }
+
+    .animated-text_dropdown {
+        select {
+            font-size: 2rem;
+        }
+
+        gap:1rem;
+        display: flex;
+        align-items: center;
+
+        @include mobile {
+            flex-direction: column;
+        }
+    }
+
+    @include mobile {
+        align-items: center;
+    }
+
+    svg {
+        overflow: visible;
+        width: 100%;
+        height: 70%;
+    }
+}

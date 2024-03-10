@@ -9,6 +9,8 @@
 
 html {
     margin: 0 5%;
+    // scroll-snap-type: y mandatory; //Providing the smooth effect on the axis
+    // scroll-behavior: smooth;
 }
 
 @include mobile {
@@ -49,9 +51,14 @@ body {
     color: lightgray;
 }
 
+// section {
+//     scroll-snap-align: center; 
+// }
+
+
 section:not(:last-child) {
     /* Your styling for all sections except the last one */
-    margin-bottom: 10rem;
+    // margin-bottom: 2rem;
 }
 
 .course {

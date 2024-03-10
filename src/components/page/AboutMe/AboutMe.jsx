@@ -4,8 +4,8 @@ import { motion } from "framer-motion";
 
 export const AboutMe = () => {
   return (
-    <motion.div className="parallax">
-      <div className="description_robot">
+    <motion.div className="about-me">
+      <div className="description">
         {/* <div className="robot">
           <RobotParent />
         </div> */}
@@ -21,6 +21,13 @@ export const AboutMe = () => {
             pretty – it&apos;s about solving problems and creating intuitive,
             enjoyable experiences for users.
           </p>
+        </div>
+      </div>
+      <div className="companies-experiences">
+        <h1>Companies I worked upon</h1>
+        <div className="companies">
+          <img src="./nagarro.png" />
+          <img src="./soprasteria.png" />
         </div>
       </div>
       {/* <div className="mountains"></div> */}

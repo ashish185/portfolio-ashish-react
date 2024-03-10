@@ -1,38 +1,43 @@
 @import "../../../mixins.scss";
 
 .contact-me {
-    height: 100%;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    .robo{
-        height: 30rem;
-        width: 30rem;
-    }
+    height: 100vh;
 
-    .coffee-message{
-        font-size: 5rem;
-    }
-    .contact_me-message{
-        font-size: 3rem;
-    }
-    .connection-signature{
-        height: 90%;
-        gap: 10px;
+    .internal-content{
         display: flex;
         flex-direction: column;
-        align-items: center;
-        justify-content: space-between;
-    }
-    .signature{
-        font-family: "Sacramento";
-        font-size: 5rem;
-    }
-    .connection{
-        display: flex;
-        align-items: center;
         justify-content: space-evenly;
+        align-items: center;
+        height: 90%;
+        .robo{
+            height: 50rem;
+            width: 50rem;
+        }
+    
+        .coffee-message{
+            font-size: 5rem;
+        }
+        .contact_me-message{
+            font-size: 3rem;
+        }
+        .connection-signature{
+            height: 90%;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+        }
+        .signature{
+            font-family: "Sacramento";
+            font-size: 5rem;
+        }
+        .connection{
+            display: flex;
+            align-items: center;
+            justify-content: space-evenly;
+        }
     }
+   
     .footer{
         bottom: 0;
         img{

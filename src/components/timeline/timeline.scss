@@ -1,9 +1,22 @@
 @import "../../mixins.scss";
+
+.time-line-container {
+    height: 100vh;
+
+    h1 {
+        align-items: center;
+        text-align: center;
+        font-size: 4rem;
+    }
+    
+
+}
+
 .timeline {
     position: relative;
-    // 
     margin: 0 auto;
-    height: 90%;
+    height: 85%;
+
 }
 
 /* The actual timeline (the vertical ruler) */
@@ -12,7 +25,7 @@
     position: absolute;
     width: 6px;
     background-color: white;
-    top: 0;
+    top: 5rem;
     bottom: 0;
     left: 50%;
     margin-left: -3px;
@@ -89,8 +102,7 @@
     position: relative;
     background: linear-gradient(180deg, #0c0c1d, #111132);
     border-radius: 6px;
-    line-height: 3rem;
-    font-size: 2.5rem;
+    font-size: 1.5rem;
 }
 
 .content:hover {

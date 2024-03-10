@@ -1,6 +1,5 @@
 import { useState, useEffect, useRef } from "react";
 import { select, axisBottom, scaleLinear, axisRight, scaleBand } from "d3";
-import "./my-graph.scss";
 import AnimatedText from "../animated/AnimatedText";
 import Select from "./../select/Select";
 
@@ -95,7 +94,7 @@ const MySkillBarChart = ({ data, options, onSelectChange }) => {
   return (
     <div className="graph-container">
       <div className="animated-text_dropdown">
-        <AnimatedText text="Skills I am having !" id="skills-dropdown" className="bar-graph-heading" />
+        <AnimatedText text="Technical Skills" id="skills-dropdown" className="bar-graph-heading" />
         <Select
           onChange={onSelectChange}
           options={options}
