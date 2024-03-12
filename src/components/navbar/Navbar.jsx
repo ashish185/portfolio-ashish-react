@@ -1,9 +1,7 @@
 import "./navbar.scss";
-import Sidebar from "../sidebar/Sidebar";
-import { GithubIcon, GmailIcon, LinkedInIcon } from "./../icons/icon";
 import Connection from "../connection/Connection";
 
-const Navbar = ({linksList}) => {
+const Navbar = ({}) => {
   return (
     <nav className="navbar">
       {/* <Sidebar linksList={linksList} /> */}
