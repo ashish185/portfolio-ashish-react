@@ -1,7 +1,7 @@
 import "./navbar.scss";
 import Connection from "../connection/Connection";
 
-const Navbar = ({}) => {
+const Navbar = () => {
   return (
     <nav className="navbar">
       {/* <Sidebar linksList={linksList} /> */}

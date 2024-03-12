@@ -18,7 +18,6 @@ export const ContactMe = () => {
       <footer className="footer">
         <img src="./foot.png" alt="Footer image" />
       </footer>
-      s
     </div>
   );
 };
