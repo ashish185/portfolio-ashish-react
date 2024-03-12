@@ -21,9 +21,9 @@ const App = () => {
       <section id={SKILLS}>
         <Skills />
       </section>
-      <section id={TIME_LINE}>
+      {/* <section id={TIME_LINE}>
         <TimeLine experiencesList={getExperiences()} />
-      </section>
+      </section> */}
       <section id={CONTACT}>
         <ContactMe />
       </section>
