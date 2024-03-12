@@ -3,11 +3,10 @@
 .navbar {
     height: 10rem;
 
-    .wrapper {
-        // margin: auto;
+    .nav-bar-wrapper {
         display: flex;
         align-items: center;
-        justify-content: space-between;
+        justify-content: flex-end;
         height: 100%;
     }
 

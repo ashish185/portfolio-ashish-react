@@ -26,8 +26,12 @@ export const AboutMe = () => {
       <div className="companies-experiences">
         <h1>Companies I worked upon</h1>
         <div className="companies">
-          <img src="./nagarro.png" />
-          <img src="./soprasteria.png" />
+          <a href="https://www.nagarro.com/en">
+            <img src="./nagarro.png" alt='nagarro company logo' />
+          </a>
+          <a href="https://www.soprasteria.com/">
+           <img src="./soprasteria.png" alt="sopra steria company logo"/>
+          </a>
         </div>
       </div>
       {/* <div className="mountains"></div> */}
