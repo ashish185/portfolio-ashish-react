@@ -5,7 +5,7 @@ import Sidebar from './../sidebar/Sidebar';
 const Navbar = ({ linksList }) => {
   return (
     <nav className="navbar">
-      <Sidebar linksList={linksList} />
+      {/* <Sidebar linksList={linksList} /> */}
       <Connection containerClassName="nav-bar-wrapper" />
     </nav>
   );
