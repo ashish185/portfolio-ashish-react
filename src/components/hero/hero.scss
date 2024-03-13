@@ -2,25 +2,6 @@
 
 .hero {
     height: calc(100vh - 10rem); //Since section height is 100vh and nav bar is 
-
-
-    // @include tablet{
-    //     height: calc(100vh - 100px);
-    // }
-
-    // @include tablet{
-    //     height: calc(100vh - 100px);
-    // } 
-
-    // @include laptop{
-    //     height: calc(100vh - 100px);
-    // }
-
-    // @include desktop{
-    //     height: calc(100vh - 100px);
-    // }
-
-
     overflow: hidden;
     display: flex;
     flex-direction: column;
@@ -82,10 +63,5 @@
             object-fit: contain;
         }
 
-        @include mobile {
-            height: 35%;
-            justify-content: end;
-        }
-     
     }
 }

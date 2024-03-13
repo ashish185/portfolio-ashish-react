@@ -1,22 +1,7 @@
-@import "../../mixins.scss";
-
-.time-line-container {
-    margin-top: 15px;
-    block-size: fit-content;
-    h1 {
-        align-items: center;
-        text-align: center;
-        font-size: 4rem;
-    }
-    
-
-}
-
 .timeline {
     position: relative;
+    max-width: 1200px;
     margin: 0 auto;
-    height: 85%;
-
 }
 
 /* The actual timeline (the vertical ruler) */
@@ -25,7 +10,7 @@
     position: absolute;
     width: 6px;
     background-color: white;
-    top: 5rem;
+    top: 0;
     bottom: 0;
     left: 50%;
     margin-left: -3px;
@@ -33,7 +18,7 @@
 
 /* Container around content */
 .container {
-    padding: 20px 20px;
+    padding: 20px 40px;
     position: relative;
     background-color: inherit;
     width: 50%;
@@ -98,11 +83,10 @@
 
 /* The actual content */
 .content {
-    padding-left: 10%;
+    padding: 20px 50px;
     position: relative;
     background: linear-gradient(180deg, #0c0c1d, #111132);
     border-radius: 6px;
-    font-size: 1.5rem;
 }
 
 .content:hover {
@@ -114,18 +98,19 @@
 
     /* Place the timelime to the left */
     .timeline::after {
-        left: 50px;
+        left: 31px;
     }
 
     /* Full-width containers */
     .container {
         width: 100%;
         padding-left: 70px;
+        padding-right: 25px;
     }
 
     /* Make sure that all arrows are pointing leftwards */
     .container::before {
-        left: 80px;
+        left: 60px;
         border: medium solid white;
         border-width: 10px 10px 10px 0;
         border-color: transparent white transparent transparent;
@@ -134,7 +119,7 @@
     /* Make sure all circles are at the same spot */
     .left::after,
     .right::after {
-        left: 32px;
+        left: 15px;
     }
 
     /* Make all right containers behave like the left ones */

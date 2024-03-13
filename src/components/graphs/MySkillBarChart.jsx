@@ -94,17 +94,23 @@ const MySkillBarChart = ({ data, options, onSelectChange }) => {
   return (
     <div className="graph-container">
       <div className="animated-text_dropdown">
-        <AnimatedText text="Technical Skills" id="skills-dropdown" className="bar-graph-heading" />
+        <AnimatedText
+          text="Technical Skills"
+          id="skills-dropdown"
+          className="bar-graph-heading"
+        />
         <Select
           onChange={onSelectChange}
           options={options}
           ariaLabelledby="skills-dropdown"
         />
       </div>
-      <svg ref={svgRef}>
-        <g className="x-axis" />
-        <g className="y-axis" />
-      </svg>
+      <div className="chart-svg">
+        <svg ref={svgRef}>
+          <g className="x-axis" />
+          <g className="y-axis" />
+        </svg>
+      </div>
     </div>
   );
 };

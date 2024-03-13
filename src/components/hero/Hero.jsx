@@ -55,7 +55,6 @@ export const Hero = () => {
         </motion.div>
       </motion.div>
       <div className="imageContainer">
-        {/* <RobotParent /> */}
         <img src="./hero-webp-format.webp" alt="Profile Picture" />
       </div>
     </div>
