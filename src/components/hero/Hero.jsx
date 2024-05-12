@@ -55,7 +55,7 @@ export const Hero = () => {
         </motion.div>
       </motion.div>
       <div className="imageContainer">
-        <img src="./hero-webp-format.webp" alt="Profile Picture" />
+        <img src="./hero.webp" alt="Profile Picture" />
       </div>
     </div>
   );
