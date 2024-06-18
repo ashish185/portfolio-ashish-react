@@ -1,8 +1,14 @@
+
 .social {
     display: flex;
-    gap: 2rem;
+    gap: 1rem;
+    flex-wrap: wrap;
    
     a {
-        font-size: 4rem;
+        font-size: 20px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        gap: 2px;
     }
 }
