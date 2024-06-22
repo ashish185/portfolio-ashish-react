@@ -1,3 +1,4 @@
+@import "../../mixins.scss";
 
 .social {
     display: flex;
@@ -9,6 +10,11 @@
         display: flex;
         align-items: center;
         justify-content: center;
-        gap: 2px;
+        gap: 2.5px;
+    }
+    .icon-text{
+        @include mobile {
+            display: none;
+        }
     }
 }

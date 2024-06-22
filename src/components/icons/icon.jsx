@@ -1,3 +1,5 @@
+import './icon.scss';
+
 export const GithubIcon = ({ className, ...rest }) => (
   <svg
     xmlns="http://www.w3.org/2000/svg"
@@ -5,7 +7,7 @@ export const GithubIcon = ({ className, ...rest }) => (
     height="1em"
     viewBox="0 0 512 512"
     {...rest}
-    className={`w-full h-auto ${className}`}
+    className={`icon w-full h-auto ${className}`}
   >
     <path fill="none" d="M0 0h512v512H0z" />
     <path
@@ -22,7 +24,7 @@ export const LinkedInIcon = ({ className, ...rest }) => (
     height="1em"
     viewBox="0 0 256 256"
     {...rest}
-    className={`w-full h-auto ${className}`}
+    className={`icon w-full h-auto ${className}`}
   >
     <path fill="none" d="M0 0h256v256H0z" />
     <g fill="none">
@@ -44,7 +46,7 @@ export const GmailIcon = ({ className, ...rest }) => (
     fill="none"
     viewBox="0 0 32 32"
     {...rest}
-    className={`w-full h-auto ${className}`}
+    className={`icon w-full h-auto ${className}`}
   >
     <path
       fill="#fff"
@@ -76,42 +78,18 @@ export const GmailIcon = ({ className, ...rest }) => (
 
 export const PhoneIcon = ({ className, ...rest }) => (
   <svg
-    xmlns="http://www.w3.org/2000/svg"
-    width="4em"
-    height="2em"
+    width="1em"
+    height="0.8em"
+    viewBox="0 0 24 24"
     fill="none"
-    viewBox="0 0 32 32"
+    xmlns="http://www.w3.org/2000/svg"
+    className={`icon w-full h-auto ${className}`}
     {...rest}
-    className={`w-full h-auto ${className}`}
   >
-    <defs>
-      <style>{".fil0{fill:none}.fil2{fill:#e64a19}"}</style>
-    </defs>
-    <g id="Layer_x0020_1">
-      <g id="_491463032">
-        <path id="_491463320" d="M0 0h6.827v6.827H0z" className="fil0" />
-        <path id="_491463128" d="M.853.853h5.12v5.12H.853z" className="fil0" />
-      </g>
-      <g id="_491478824">
-        <path
-          id="_491463224"
-          d="M.909 2.24c.067 1.39 1.968 3.158 3.255 3.57.863.275 2.148-.269 1.64-.777L5 4.23c-.122-.123-.32-.108-.439.01l-.46.462c-.992-.54-1.408-.966-1.953-1.951l.462-.462c.119-.119.132-.317.01-.439l-.803-.803C1.37.598.883 1.715.908 2.24z"
-          style={{
-            fill: "#ff6e40",
-          }}
-        />
-        <path
-          id="_491478584"
-          d="m.909 2.24 1.24.51.462-.46c.119-.12.132-.318.01-.44l-.803-.803C1.37.598.883 1.715.908 2.24z"
-          className="fil2"
-        />
-        <path
-          id="_491478176"
-          d="M4.164 5.81c.863.275 2.148-.269 1.64-.777L5 4.23c-.122-.123-.32-.108-.439.01l-.46.462.062 1.107z"
-          className="fil2"
-        />
-      </g>
-    </g>
+    <path
+      d="M6.62 10.79C8.06 13.13 10.87 15.94 13.21 17.38L15.27 15.32C15.68 14.91 16.32 14.76 16.87 14.91C18.15 15.27 19.55 15.5 21 15.5C21.55 15.5 22 15.95 22 16.5V21C22 21.55 21.55 22 21 22C10.51 22 2 13.49 2 3C2 2.45 2.45 2 3 2H7.5C8.05 2 8.5 2.45 8.5 3C8.5 4.45 8.73 5.85 9.09 7.13C9.24 7.68 9.09 8.32 8.68 8.73L6.62 10.79Z"
+      fill="currentColor"
+    />
   </svg>
 );
 
@@ -121,6 +99,8 @@ export const CopyIcon = ({
   fill = "none",
   stroke = "currentColor",
   strokeWidth = 2,
+  isTick,
+  className
 }) => (
   <div title={"Copy link"}>
     <svg
@@ -128,11 +108,18 @@ export const CopyIcon = ({
       height={height}
       viewBox="0 0 24 24"
       fill={fill}
+      className={`icon w-full h-auto ${className}`}
       xmlns="http://www.w3.org/2000/svg"
     >
       <path
         d="M16 1H4C2.9 1 2 1.9 2 3V17H4V3H16V1ZM21 5H8C6.9 5 6 5.9 6 7V21C6 22.1 6.9 23 8 23H21C22.1 23 23 22.1 23 21V7C23 5.9 22.1 5 21 5ZM21 21H8V7H21V21Z"
         fill={stroke}
+      />
+      <path
+        d={isTick ? "M9 12l2 2 4-4" : ""}
+        fill="none"
+        stroke={stroke}
+        strokeWidth={strokeWidth}
       />
     </svg>
   </div>
