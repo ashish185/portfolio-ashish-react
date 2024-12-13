@@ -1,6 +1,8 @@
 import Experience from './src/components/timeline/Experience';
 import ExperienceList from './src/components/timeline/ExperienceList';
 
+export const RESUME_LINK = 'https://drive.google.com/file/d/1TsyBfGTVBHg1mstVKsJgFzlwInt3WKvU/view?usp=sharing';
+
 export const getExperiences = () => {
   const xp1 = new Experience();
   xp1.year = "(2022-Present)"; // Set year using setter

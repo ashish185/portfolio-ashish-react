@@ -5,7 +5,7 @@ import { AboutMe } from './components/page/AboutMe/AboutMe';
 import Skills from './components/page/Skills/Skills';
 import TimeLine from './components/timeline/TimeLine';
 import { ABOUT, CONTACT, HOME_PAGE, SKILLS, TIME_LINE } from "./constant";
-import { getExperiences } from './../config';
+import { getExperiences, RESUME_LINK } from './../config';
 import { ContactMe } from './components/page/ContactMe/ContactMe';
 
 const App = () => {
@@ -13,7 +13,7 @@ const App = () => {
     <div>
       <section id={HOME_PAGE}>
         <Navbar linksList={[HOME_PAGE, ABOUT, SKILLS, TIME_LINE, CONTACT]} />
-        <Hero />
+        <Hero resumeLink={RESUME_LINK} />
       </section>
       <section id={ABOUT}>
         <AboutMe />

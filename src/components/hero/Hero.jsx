@@ -25,7 +25,7 @@ const textVariant = {
   },
 };
 
-export const Hero = () => {
+export const Hero = ({ resumeLink }) => {
   const onContactMeClick = () => {};
   return (
     <div className="hero">
@@ -47,8 +47,12 @@ export const Hero = () => {
               Contact me
             </motion.button>
           </a>
-          <a href="https://drive.google.com/file/d/1cMQQVUTMpOThoKG9F2VIBMf8Cdx7PGCD/view?usp=sharing" download>
-            <motion.button variants={textVariant} onClick={onContactMeClick} title="Download Resume">
+          <a href={resumeLink} download>
+            <motion.button
+              variants={textVariant}
+              onClick={onContactMeClick}
+              title="Download Resume"
+            >
               Resume
             </motion.button>
           </a>
