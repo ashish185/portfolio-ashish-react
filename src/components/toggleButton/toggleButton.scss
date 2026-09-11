@@ -1,0 +1,35 @@
+.toggle-button {
+    width: 23px;
+    height: 23px;
+    background: transparent;
+    border: none;
+    padding: 0;
+    cursor: pointer;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+
+    .bar {
+        display: block;
+        height: 3px;
+        width: 100%;
+        background-color: black;
+        border-radius: 2px;
+        transition: transform 0.3s ease, opacity 0.3s ease;
+        transform-origin: center;
+    }
+
+    &.open {
+        .bar-top {
+            transform: translateY(9.5px) rotate(45deg);
+        }
+
+        .bar-middle {
+            opacity: 0;
+        }
+
+        .bar-bottom {
+            transform: translateY(-9.5px) rotate(-45deg);
+        }
+    }
+}

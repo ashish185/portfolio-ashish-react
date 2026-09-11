@@ -16,6 +16,8 @@
         bottom: 0;
         width: 200px;
         background: white;
+        clip-path: circle(30px at 50px 50px);
+        transition: clip-path 0.4s ease-in-out;
         .links {
             position: absolute;
             width: 100%;
@@ -42,5 +44,9 @@
         left: 25px;
         background-color: transparent;
         border: none;
+    }
+
+    &.open .bg {
+        clip-path: circle(1200px at 50px 50px);
     }
 }

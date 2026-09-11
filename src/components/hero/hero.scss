@@ -1,5 +1,17 @@
 @import "../../mixins.scss";
 
+@keyframes slide-in {
+    from {
+        transform: translateX(-500px);
+        opacity: 0;
+    }
+
+    to {
+        transform: translateX(0);
+        opacity: 1;
+    }
+}
+
 .hero {
     height: calc(100vh - 10rem); //Since section height is 100vh and nav bar is 
     overflow: hidden;
@@ -18,6 +30,11 @@
         align-items: center;
         justify-content: space-evenly;
         // flex-grow: 2;
+
+        .slide-in {
+            opacity: 0;
+            animation: slide-in 1s ease forwards;
+        }
 
         .name_heading {
             font-size: 6vmin;

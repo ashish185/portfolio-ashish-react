@@ -1,29 +1,5 @@
-import { motion } from "framer-motion";
 import "./hero.scss";
 import { CONTACT } from "../../constant";
-
-const textVariant = {
-  initial: {
-    x: -500,
-    opacity: 0,
-  },
-  animate: {
-    x: 0, //setting the animate from left to right
-    opacity: 1,
-    transition: {
-      duration: 1,
-      staggerChildren: 0.1,
-    },
-  },
-  scrollButton: {
-    opacity: 0,
-    y: 10,
-    transition: {
-      duration: 2,
-      repeat: Infinity,
-    },
-  },
-};
 
 export const Hero = ({ resumeLink }) => {
   const onContactMeClick = () => {};
@@ -32,35 +8,27 @@ export const Hero = ({ resumeLink }) => {
         <div className="imageContainer">
         <img src="./tech-consultant.webp" alt="Profile Picture" />
       </div>
-      <motion.div
-        className="text-container"
-        variants={textVariant}
-        initial="initial"
-        animate="animate"
-      >
-        <motion.h2 variants={textVariant} className="name_heading">
+      <div className="text-container">
+        <h2 className="name_heading slide-in" style={{ animationDelay: "0s" }}>
           Ashish Singhal
-        </motion.h2>
-        <motion.h1 variants={textVariant} className="description_heading">
+        </h2>
+        <h1
+          className="description_heading slide-in"
+          style={{ animationDelay: "0.1s" }}
+        >
           Web developer and UI designer
-        </motion.h1>
-        <motion.div variants={textVariant} className="buttons">
+        </h1>
+        <div className="buttons slide-in" style={{ animationDelay: "0.2s" }}>
           <a href={`#${CONTACT}`} title="Go to Contact section">
-            <motion.button variants={textVariant} onClick={onContactMeClick}>
-              Contact me
-            </motion.button>
+            <button onClick={onContactMeClick}>Contact me</button>
           </a>
           <a href={resumeLink} download>
-            <motion.button
-              variants={textVariant}
-              onClick={onContactMeClick}
-              title="Download Resume"
-            >
+            <button onClick={onContactMeClick} title="Download Resume">
               Resume
-            </motion.button>
+            </button>
           </a>
-        </motion.div>
-      </motion.div>
+        </div>
+      </div>
     </div>
   );
 };

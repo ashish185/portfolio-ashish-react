@@ -1,4 +1,3 @@
-import { motion } from "framer-motion";
 import "./robo.scss";
 const Robot = (props) => (
   <svg
