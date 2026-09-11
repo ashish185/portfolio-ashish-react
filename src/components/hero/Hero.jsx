@@ -29,6 +29,9 @@ export const Hero = ({ resumeLink }) => {
   const onContactMeClick = () => {};
   return (
     <div className="hero">
+        <div className="imageContainer">
+        <img src="./tech-consultant.webp" alt="Profile Picture" />
+      </div>
       <motion.div
         className="text-container"
         variants={textVariant}
@@ -58,9 +61,6 @@ export const Hero = ({ resumeLink }) => {
           </a>
         </motion.div>
       </motion.div>
-      <div className="imageContainer">
-        <img src="./hero.webp" alt="Profile Picture" />
-      </div>
     </div>
   );
 };

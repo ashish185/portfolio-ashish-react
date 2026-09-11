@@ -1,7 +1,7 @@
 import Experience from './src/components/timeline/Experience';
 import ExperienceList from './src/components/timeline/ExperienceList';
 
-export const RESUME_LINK = 'https://drive.google.com/file/d/1TsyBfGTVBHg1mstVKsJgFzlwInt3WKvU/view?usp=sharing';
+export const RESUME_LINK = 'https://drive.google.com/file/d/1FecACrIvtOUFTyHzT0i-MGjT_Uda2grw/view?usp=sharing';
 
 export const getExperiences = () => {
   const xp1 = new Experience();

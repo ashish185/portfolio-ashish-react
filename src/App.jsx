@@ -1,12 +1,11 @@
+import { RESUME_LINK } from './../config';
 import './app.scss';
 import { Hero } from './components/hero/Hero';
 import Navbar from './components/navbar/Navbar';
 import { AboutMe } from './components/page/AboutMe/AboutMe';
-import Skills from './components/page/Skills/Skills';
-import TimeLine from './components/timeline/TimeLine';
-import { ABOUT, CONTACT, HOME_PAGE, SKILLS, TIME_LINE } from "./constant";
-import { getExperiences, RESUME_LINK } from './../config';
 import { ContactMe } from './components/page/ContactMe/ContactMe';
+import Skills from './components/page/Skills/Skills';
+import { ABOUT, CONTACT, HOME_PAGE, SKILLS, TIME_LINE } from "./constant";
 
 const App = () => {
   return (

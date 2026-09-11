@@ -1,7 +1,7 @@
-import CopyIcon, { LinkedInIcon, PhoneIcon } from "../icons/icon";
-import { GmailIcon, GithubIcon } from "./../icons/icon";
-import "./connection.scss";
 import { useState } from "react";
+import CopyIcon, { LinkedInIcon, PhoneIcon } from "../icons/icon";
+import { GithubIcon, GmailIcon } from "./../icons/icon";
+import "./connection.scss";
 
 import config from "./../../../config.json";
 
@@ -74,13 +74,16 @@ const Connection = ({ containerClassName = "" }) => {
             <CopyIcon isTick={copyObj[emailId]} />
           </span>
         </a>
-        <a href={phoneNumber}>
-          <PhoneIcon />
-          <span className="icon-text">{phoneNumber}</span>
-          <span onClick={() => onClick(event, phoneNumber)}>
-            <CopyIcon isTick={copyObj[phoneNumber]} />
-          </span>
-        </a>
+        {
+          phoneNumber && (<a href={phoneNumber}>
+            <PhoneIcon />
+            <span className="icon-text">{phoneNumber}</span>
+            <span onClick={() => onClick(event, phoneNumber)}>
+              <CopyIcon isTick={copyObj[phoneNumber]} />
+            </span>
+          </a>)
+        }
+
       </div>
     </div>
   );
