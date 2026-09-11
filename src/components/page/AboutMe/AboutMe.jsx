@@ -6,11 +6,11 @@ export const AboutMe = () => {
       <h2 className="heading">About me!</h2>
       <div className="about-me">
         <div className="description">
-          Hi, I&apos;m Ashish, a web developer and UI/UX designer with a passion
-          for creating beautiful, functional, and user-centered digital
-          experiences.
+          Hi, I&apos;m Ashish, a Full Stack Developer with a strong frontend
+          enthusiasm, passionate about creating beautiful, functional, and
+          user-centered digital experiences.
           <p>
-            With 5+ years of experience in the field. I am always looking for
+            With 8+ years of experience in the field. I am always looking for
             new and innovative ways to bring Consumers visions to life.
           </p>
           <p className="sub-description">

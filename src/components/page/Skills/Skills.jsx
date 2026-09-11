@@ -1,4 +1,4 @@
-import { useState, Suspense, lazy } from "react";
+import { Suspense, lazy } from "react";
 import "./skill.scss";
 
 const MySkillBarChartMain = lazy(() =>
